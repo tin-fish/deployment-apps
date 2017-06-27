@@ -1,0 +1,11 @@
+[indexAndForward]
+index = false
+ 
+[tcpout]
+defaultGroup = my_peers 
+forwardedindex.filter.disable = true  
+indexAndForward = false 
+ 
+[tcpout:my_peers]
+server=192.168.69.61:9997
+autoLB = true
